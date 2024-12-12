@@ -31,6 +31,9 @@ class ActorCritic(nn.Module):
         super().__init__()
         activation = get_activation(activation)
 
+        # # hard coded!! pls remove
+        # num_actor_obs = 316
+
         mlp_input_dim_a = num_actor_obs
         mlp_input_dim_c = num_critic_obs
         # Policy
